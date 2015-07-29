@@ -16,6 +16,9 @@ Feel free to open pull requests and issues as you see fit.
 I am using Visual Studio Express 2013 and each project gets its own
 project in this solution.
 
+Note that projects that do not use C++ exist in their own folders, not
+related to the VS 2013 solution.
+
 ## Can I use the code in my system?
 
 Yes, but I wouldn't recommend it. This is didactic material and not
