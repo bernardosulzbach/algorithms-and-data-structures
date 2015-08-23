@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "insertion-sort", "insertion
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "merge-sort", "merge-sort\merge-sort.vcxproj", "{DD8433AC-B9CD-4AE7-9173-167A636F1C17}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "trie", "trie\trie.vcxproj", "{99D0F5E4-8546-4788-8BF1-2D4CD2A6369F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,16 @@ Global
 		{DD8433AC-B9CD-4AE7-9173-167A636F1C17}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{DD8433AC-B9CD-4AE7-9173-167A636F1C17}.Release|Win32.ActiveCfg = Release|Win32
 		{DD8433AC-B9CD-4AE7-9173-167A636F1C17}.Release|Win32.Build.0 = Release|Win32
+		{99D0F5E4-8546-4788-8BF1-2D4CD2A6369F}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{99D0F5E4-8546-4788-8BF1-2D4CD2A6369F}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{99D0F5E4-8546-4788-8BF1-2D4CD2A6369F}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{99D0F5E4-8546-4788-8BF1-2D4CD2A6369F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{99D0F5E4-8546-4788-8BF1-2D4CD2A6369F}.Debug|Win32.Build.0 = Debug|Win32
+		{99D0F5E4-8546-4788-8BF1-2D4CD2A6369F}.Release|Any CPU.ActiveCfg = Release|Win32
+		{99D0F5E4-8546-4788-8BF1-2D4CD2A6369F}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{99D0F5E4-8546-4788-8BF1-2D4CD2A6369F}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{99D0F5E4-8546-4788-8BF1-2D4CD2A6369F}.Release|Win32.ActiveCfg = Release|Win32
+		{99D0F5E4-8546-4788-8BF1-2D4CD2A6369F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
