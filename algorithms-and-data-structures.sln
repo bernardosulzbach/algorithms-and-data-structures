@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "trailing-zeros-in-factorial
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "string-interning", "string-interning\string-interning.vcxproj", "{FBA220F1-8968-4014-A8BD-C281BA242494}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "graphs", "graphs\graphs.vcxproj", "{03BC114F-D79D-43FC-BA33-E5B1C4051701}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +111,16 @@ Global
 		{FBA220F1-8968-4014-A8BD-C281BA242494}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{FBA220F1-8968-4014-A8BD-C281BA242494}.Release|Win32.ActiveCfg = Release|Win32
 		{FBA220F1-8968-4014-A8BD-C281BA242494}.Release|Win32.Build.0 = Release|Win32
+		{03BC114F-D79D-43FC-BA33-E5B1C4051701}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{03BC114F-D79D-43FC-BA33-E5B1C4051701}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{03BC114F-D79D-43FC-BA33-E5B1C4051701}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{03BC114F-D79D-43FC-BA33-E5B1C4051701}.Debug|Win32.ActiveCfg = Debug|Win32
+		{03BC114F-D79D-43FC-BA33-E5B1C4051701}.Debug|Win32.Build.0 = Debug|Win32
+		{03BC114F-D79D-43FC-BA33-E5B1C4051701}.Release|Any CPU.ActiveCfg = Release|Win32
+		{03BC114F-D79D-43FC-BA33-E5B1C4051701}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{03BC114F-D79D-43FC-BA33-E5B1C4051701}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{03BC114F-D79D-43FC-BA33-E5B1C4051701}.Release|Win32.ActiveCfg = Release|Win32
+		{03BC114F-D79D-43FC-BA33-E5B1C4051701}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
