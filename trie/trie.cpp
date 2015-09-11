@@ -23,15 +23,12 @@ void insert(Trie& trie, const std::string& str) {
     TrieNode *cur = trie.root_node;
     for (char c : str) {
         TrieNode *child = cur->child;
-        while (child != nullptr)
-        {
-            if (child->symbol == c)
-            {
+        while (child != nullptr) {
+            if (child->symbol == c) {
                 cur = child;
                 break;
             }
-            else
-            {
+            else {
                 child = child->next;
             }
         }
@@ -54,7 +51,7 @@ void insert(Trie& trie, const std::string& str) {
 }
 
 bool contains(const Trie& trie, const std::string& str) {
-    TrieNode *cur = trie.root_node;
+    TrieNode *cur = trie.root_node->child;
     for (char c : str) {
         if (cur == nullptr) return false; // Expected a node.
         while (true) {
