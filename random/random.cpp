@@ -16,24 +16,24 @@ std::mt19937 &global_urng() {
     static std::mt19937 mt = make_global_urng();
     return mt;
 }
-
-template <typename T>
-void call_random_choice_on_vector(const std::vector<T> &v) {
-    random_choice<T>(v.begin(), v.end());
-}
-
-#include <iostream>
-int main() {
-    std::vector<int> vector;
-    try {
-        call_random_choice_on_vector(vector);
-    }
-    catch (const std::invalid_argument&) {
-        // Expected.
-    }
-    vector.push_back(1);
-    call_random_choice_on_vector(vector);
-    vector.push_back(2);
-    call_random_choice_on_vector(vector);
-    return 0;
-}
+//
+//template <typename T>
+//void call_random_choice_on_vector(const std::vector<T> &v) {
+//    random_choice<T>(v.begin(), v.end());
+//}
+//
+//#include <iostream>
+//int main() {
+//    std::vector<int> vector;
+//    try {
+//        call_random_choice_on_vector(vector);
+//    }
+//    catch (const std::invalid_argument&) {
+//        // Expected.
+//    }
+//    vector.push_back(1);
+//    call_random_choice_on_vector(vector);
+//    vector.push_back(2);
+//    call_random_choice_on_vector(vector);
+//    return 0;
+//}

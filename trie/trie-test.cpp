@@ -5,17 +5,16 @@
 #include <vector>
 
 #include "trie.h"
+#include "..\random\random.h"
 
 // Inserts some strings from the vector, test for all.
-void test(Trie& trie, std::vector<std::string> string_vector)
-{
+void test(Trie& trie, std::vector<std::string> string_vector) {
     // setf returns the flags before the function call. Store them to reset default later on.
     std::ios_base::fmtflags flags = std::cout.setf(std::ios_base::boolalpha);
 
     // Insert some strings.
-    for (int i = string_vector.size() / 2; i > 0; i--)
-    {
-        std::string str = string_vector[rand() % string_vector.size()];
+    for (int i = string_vector.size() / 2; i > 0; i--) {
+        std::string str = random_choice<std::string>(string_vector.begin(), string_vector.end());
         std::cout << "Inserted \"" << str << "\" into the trie.\n";
         insert(trie, str);
     }
