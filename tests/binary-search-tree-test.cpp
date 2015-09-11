@@ -18,7 +18,7 @@ public:
         const int minimum = 0;
         const int maximum = 8;
         for (int value : values) tree.insert(value);
-        for (int i = 0; i < 10; ++i) Assert::AreEqual(in_vector(values, i), tree.contains(i));
+        for (int i = 0; i < 10; ++i) Assert::AreEqual(AADS::in_vector(values, i), tree.contains(i));
         Assert::AreEqual(minimum, tree.min());
         Assert::AreEqual(maximum, tree.max());
     }
