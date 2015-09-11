@@ -11,7 +11,7 @@ namespace tests
 {
     TEST_CLASS(TrieTest) {
 public:
-    TEST_METHOD(Test) {
+    TEST_METHOD(TestTrie) {
         Trie trie;
         insert(trie, "testing");
         Assert::IsTrue(contains(trie, "testing"));

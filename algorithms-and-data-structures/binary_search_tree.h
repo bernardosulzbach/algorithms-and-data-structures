@@ -3,10 +3,11 @@
 template <typename T>
 class BinarySearchTree {
 private:
+    bool initialized = false;
     T value;
-    BinarySearchTree<T>* parent;
-    BinarySearchTree<T>* l;
-    BinarySearchTree<T>* r;
+    BinarySearchTree<T> *parent = nullptr;
+    BinarySearchTree<T> *l = nullptr;
+    BinarySearchTree<T> *r = nullptr;
 
 public:
     BinarySearchTree();
@@ -16,14 +17,14 @@ public:
     ~BinarySearchTree();
 
     // Checks if a given element is on the tree.
-    bool contains(const T t) const;
+    bool contains(T t) const;
 
     // Inserts an element into the tree.
     // Returns true if the element was inserted.
-    bool insert(const T t);
+    bool insert(T t);
 
     // Erases an element.
-    void erase(const T t);
+    void erase(T t);
 
     // Finds the minimum element of the tree.
     T min() const;
@@ -36,20 +37,21 @@ template <typename T>
 BinarySearchTree<T>::BinarySearchTree() {};
 
 template <typename T>
-BinarySearchTree<T>::BinarySearchTree(const T t) {
+BinarySearchTree<T>::BinarySearchTree(T t) {
     value = t;
+    initialized = true;
 };
 
 template <typename T>
 BinarySearchTree<T>::~BinarySearchTree() {};
 
 template <typename T>
-bool BinarySearchTree<T>::contains(const T t) const {
-    if (value == NULL) {
+bool BinarySearchTree<T>::contains(T t) const {
+    if (!initialized) {
         return false;
     }
     else if (t < value) {
-        if (l == NULL) {
+        if (l == nullptr) {
             return false;
         }
         else {
@@ -60,7 +62,7 @@ bool BinarySearchTree<T>::contains(const T t) const {
         return true;
     }
     else {
-        if (r == NULL) {
+        if (r == nullptr) {
             return false;
         }
         else {
@@ -70,16 +72,17 @@ bool BinarySearchTree<T>::contains(const T t) const {
 }
 
 template <typename T>
-bool BinarySearchTree<T>::insert(const T t) {
+bool BinarySearchTree<T>::insert(T t) {
     if (contains(t)) {
         return false;
     }
-    if (value == NULL) {
+    if (!initialized) {
         value = t;
+        initialized = true;
         return true;
     }
     if (t < value) {
-        if (l == NULL) {
+        if (l == nullptr) {
             BinarySearchTree<T>* child = new BinarySearchTree<T>(t);
             child->parent = this;
             l = child;
@@ -90,7 +93,7 @@ bool BinarySearchTree<T>::insert(const T t) {
         }
     }
     else {
-        if (r == NULL) {
+        if (r == nullptr) {
             BinarySearchTree<T>* child = new BinarySearchTree<T>(t);
             child->parent = this;
             r = child;
@@ -105,7 +108,7 @@ bool BinarySearchTree<T>::insert(const T t) {
 template <typename T>
 T BinarySearchTree<T>::min() const {
     const BinarySearchTree* pointer = this;
-    while (pointer->l != NULL) {
+    while (pointer->l != nullptr) {
         pointer = pointer->l;
     }
     return pointer->value;
@@ -114,7 +117,7 @@ T BinarySearchTree<T>::min() const {
 template <typename T>
 T BinarySearchTree<T>::max() const {
     const BinarySearchTree* pointer = this;
-    while (pointer->r != NULL) {
+    while (pointer->r != nullptr) {
         pointer = pointer->r;
     }
     return pointer->value;

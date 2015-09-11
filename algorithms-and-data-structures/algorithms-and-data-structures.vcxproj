@@ -11,12 +11,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{4BE68C03-7B99-49BB-A52D-0DA523313A34}</ProjectGuid>
-    <RootNamespace>binarysearchtree</RootNamespace>
+    <ProjectGuid>{02434FFB-AD84-4B6E-A733-69B14BE91C78}</ProjectGuid>
+    <RootNamespace>algorithmsanddatastructures</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
@@ -65,9 +65,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="binary_search_tree.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="binary_search_tree_test.cpp" />
+    <ClInclude Include="utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
