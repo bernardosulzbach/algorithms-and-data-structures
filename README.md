@@ -3,7 +3,7 @@
 ## Why this project?
 
 As I teach myself about algorithms and data structures I like to
-implement them in a simple and readable way.
+implement them in a simple, easy-to-read, and elegant way.
 
 I used to place solutions to some competitive programming problems
 among these files and that's why my old algorithms and data structures
@@ -13,8 +13,7 @@ to use a public GitHub repository.
 
 Feel free to open pull requests and issues as you see fit.
 
-I am using Visual Studio Express 2013 and each project gets its own
-project in this solution.
+I am using Visual Studio Express 2013 for the C++ projects.
 
 Note that projects that do not use C++ exist in their own folders, not
 related to the VS 2013 solution.
