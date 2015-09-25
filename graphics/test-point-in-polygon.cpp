@@ -1,8 +1,7 @@
+#include <iostream>
 #include <vector>
 
 #include "primitives.h"
-
-#include <iostream>
 
 int main() {
     Point a(0.0, 0.0);

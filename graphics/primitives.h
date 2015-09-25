@@ -1,5 +1,6 @@
 #pragma once
 
+#include <iostream>
 #include <vector>
 
 class Point {
@@ -12,6 +13,8 @@ private:
     double x;
     double y;
 };
+
+std::ostream& operator<<(std::ostream&, const Point&);
 
 class Segment {
 public:

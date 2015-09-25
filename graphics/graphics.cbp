@@ -12,6 +12,8 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-Wall" />
 					<Add option="-g" />
 				</Compiler>
 			</Target>
@@ -31,6 +33,9 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="primitives.cpp" />
+		<Unit filename="primitives.h" />
+		<Unit filename="test-point-in-polygon.cpp" />
 		<Extensions>
 			<envvars />
 			<code_completion />

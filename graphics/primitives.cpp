@@ -1,6 +1,6 @@
 #include <cmath>
-#include <vector>
 #include <iostream>
+#include <vector>
 
 class Point {
 public:
@@ -12,14 +12,17 @@ public:
     double getY() const {
         return y;
     }
-    friend std::ostream& operator<<(std::ostream& o, const Point& point) {
-        o << "(" << point.getX() << ", " << point.getY() << ")";
-        return o;
-    }
 private:
     double x;
     double y;
 };
+
+// As described by Herb Sutter and Scott Meyers, prefer non-friend non-member functions to member
+// functions, to help increase encapsulation.
+std::ostream& operator<<(std::ostream& os, const Point& point) {
+    os << "(" << point.getX() << ", " << point.getY() << ")";
+    return os;
+}
 
 class Segment {
 public:
@@ -62,7 +65,6 @@ bool inside_polygon(const Polygon& poly, const Point& point) {
     for (Segment segment : poly.getSegments()) {
         Point a = segment.getA();
         Point b = segment.getB();
-        //std::cout << a << " " << b << "\n";
         if (a.getY() < point.getY() && b.getY() < point.getY()) {
         } else if (a.getY() >= point.getY() && b.getY() >= point.getY()) {
         } else {
@@ -76,11 +78,8 @@ bool inside_polygon(const Polygon& poly, const Point& point) {
                 // the segment.
                 double slope = (b.getY() - a.getY()) / (b.getX() - a.getX());
                 double x_offset_from_a = (point.getY() - a.getY()) / slope;
-                //std::cout << x_offset_from_a << "\n";
                 double x_of_intersection = a.getX() + x_offset_from_a;
-                //std::cout << x_of_intersection << "\n";
                 if (x_of_intersection >= point.getX()) {
-                    //std::cout << "Got here.\n";
                     intersectionCount++;
                 }
             }
