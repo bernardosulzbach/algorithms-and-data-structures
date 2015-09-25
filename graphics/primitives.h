@@ -26,6 +26,12 @@ public:
 class Polygon {
 public:
     template <typename InputIterator>
+    /** \brief Constructs a new Polygon. The vertices should be provided in CCW order.
+     *
+     * \param begin InputIterator
+     * \param end InputIterator
+     *
+     */
     Polygon(InputIterator begin, InputIterator end) {
         copy(begin, end, std::back_inserter(points));
     }
@@ -34,5 +40,12 @@ public:
 private:
     std::vector<Point> points;
 };
+
+/** \brief Evaluates the area of a Polygon. The vertices must be in CCW (counter clockwise) order.
+ *
+ * \param poly const Polygon&
+ * \return double
+ */
+double area(const Polygon& poly);
 
 bool inside_polygon(const Polygon& poly, const Point& point);

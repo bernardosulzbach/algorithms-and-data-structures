@@ -17,5 +17,7 @@ int main() {
     std::cout << (inside_polygon(triangle, Point(1.0, 1.0)) == false) << "\n";
     std::cout << (inside_polygon(triangle, Point(2.0, 1.0)) == false) << "\n";
     std::cout << (inside_polygon(triangle, Point(0.0, .5)) == false) << "\n";
+    std::cout << area(triangle) << "\n";
+
     return 0;
 }

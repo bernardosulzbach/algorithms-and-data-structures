@@ -60,6 +60,14 @@ private:
     std::vector<Point> points;
 };
 
+double area(const Polygon& poly) {
+    double sum = 0;
+    for (Segment segment : poly.getSegments()) {
+        sum += (segment.getB().getY() - segment.getA().getY()) * (segment.getA().getX() + segment.getB().getX());
+    }
+    return sum / 2;
+}
+
 bool inside_polygon(const Polygon& poly, const Point& point) {
     unsigned int intersectionCount = 0;
     for (Segment segment : poly.getSegments()) {
