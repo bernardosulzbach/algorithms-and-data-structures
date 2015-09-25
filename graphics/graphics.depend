@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1443201519 source:/home/mafagafogigante/Code/algorithms-and-data-structures/graphics/test-point-in-polygon.cpp
+	<vector>
+	"primitives.h"
+
+1443201845 /home/mafagafogigante/Code/algorithms-and-data-structures/graphics/primitives.h
+	<vector>
+
+1443201673 source:/home/mafagafogigante/Code/algorithms-and-data-structures/graphics/primitives.cpp
+	<vector>
+
