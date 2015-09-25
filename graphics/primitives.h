@@ -13,6 +13,13 @@ private:
     double y;
 };
 
+class Segment {
+public:
+    Segment(const Point&, const Point&);
+    Point getA() const;
+    Point getB() const;
+};
+
 class Polygon {
 public:
     template <typename InputIterator>
@@ -20,10 +27,9 @@ public:
         copy(begin, end, std::back_inserter(points));
     }
     const std::vector<Point> getPoints() const;
+    const std::vector<Segment> getSegments() const;
 private:
     std::vector<Point> points;
 };
 
-bool inside_polygon(const Polygon& poly, const Point& point) {
-    return false;
-}
+bool inside_polygon(const Polygon& poly, const Point& point);
