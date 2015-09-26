@@ -213,3 +213,6 @@ ModelManifest.xml
 
 # Python
 __pycache__/
+
+# Code::Blocks
+*.layout
