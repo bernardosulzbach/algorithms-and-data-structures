@@ -66,6 +66,7 @@
   <ItemGroup>
     <ClInclude Include="insertion-sort.h" />
     <ClInclude Include="binary_search_tree.h" />
+    <ClInclude Include="josephus.h" />
     <ClInclude Include="merge-sort.h" />
     <ClInclude Include="graphic-primitives.h" />
     <ClInclude Include="quick-sort.h" />

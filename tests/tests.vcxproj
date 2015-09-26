@@ -88,6 +88,7 @@
   <ItemGroup>
     <ClCompile Include="binary-search-tree-test.cpp" />
     <ClCompile Include="graphic-primitives-tests.cpp" />
+    <ClCompile Include="josephus.cpp" />
     <ClCompile Include="sorting-algorithms-tests.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

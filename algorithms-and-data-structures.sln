@@ -5,8 +5,6 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "trie", "trie\trie.vcxproj", "{99D0F5E4-8546-4788-8BF1-2D4CD2A6369F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "josephus-problem", "josephus-problem\josephus-problem.vcxproj", "{20BF009C-CA00-4BBF-AF96-43B459984A2E}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "trailing-zeros-in-factorial", "trailing-zeros-in-factorial\trailing-zeros-in-factorial.vcxproj", "{F2A97EF7-827F-42E5-91E4-47E3EF476CCE}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "string-interning", "string-interning\string-interning.vcxproj", "{FBA220F1-8968-4014-A8BD-C281BA242494}"
@@ -41,16 +39,6 @@ Global
 		{99D0F5E4-8546-4788-8BF1-2D4CD2A6369F}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{99D0F5E4-8546-4788-8BF1-2D4CD2A6369F}.Release|Win32.ActiveCfg = Release|Win32
 		{99D0F5E4-8546-4788-8BF1-2D4CD2A6369F}.Release|Win32.Build.0 = Release|Win32
-		{20BF009C-CA00-4BBF-AF96-43B459984A2E}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{20BF009C-CA00-4BBF-AF96-43B459984A2E}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
-		{20BF009C-CA00-4BBF-AF96-43B459984A2E}.Debug|Mixed Platforms.Build.0 = Debug|Win32
-		{20BF009C-CA00-4BBF-AF96-43B459984A2E}.Debug|Win32.ActiveCfg = Debug|Win32
-		{20BF009C-CA00-4BBF-AF96-43B459984A2E}.Debug|Win32.Build.0 = Debug|Win32
-		{20BF009C-CA00-4BBF-AF96-43B459984A2E}.Release|Any CPU.ActiveCfg = Release|Win32
-		{20BF009C-CA00-4BBF-AF96-43B459984A2E}.Release|Mixed Platforms.ActiveCfg = Release|Win32
-		{20BF009C-CA00-4BBF-AF96-43B459984A2E}.Release|Mixed Platforms.Build.0 = Release|Win32
-		{20BF009C-CA00-4BBF-AF96-43B459984A2E}.Release|Win32.ActiveCfg = Release|Win32
-		{20BF009C-CA00-4BBF-AF96-43B459984A2E}.Release|Win32.Build.0 = Release|Win32
 		{F2A97EF7-827F-42E5-91E4-47E3EF476CCE}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{F2A97EF7-827F-42E5-91E4-47E3EF476CCE}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
 		{F2A97EF7-827F-42E5-91E4-47E3EF476CCE}.Debug|Mixed Platforms.Build.0 = Debug|Win32
