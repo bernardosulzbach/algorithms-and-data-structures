@@ -35,5 +35,8 @@
     <ClCompile Include="sorting-algorithms-tests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="graphic-primitives-tests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

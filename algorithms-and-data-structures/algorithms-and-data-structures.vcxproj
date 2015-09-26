@@ -67,8 +67,12 @@
     <ClInclude Include="insertion-sort.h" />
     <ClInclude Include="binary_search_tree.h" />
     <ClInclude Include="merge-sort.h" />
+    <ClInclude Include="graphic-primitives.h" />
     <ClInclude Include="quick-sort.h" />
     <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="graphic-primitives.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

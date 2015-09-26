@@ -1,9 +1,12 @@
 #include <algorithm>
 #include <cmath>
 #include <iostream>
+#include <iterator>
 #include <vector>
 
-#include "primitives.h"
+#include "graphic-primitives.h"
+
+Point::Point(): x(0), y(0) {}
 
 double Point::getX() const {
     return x;
@@ -43,13 +46,10 @@ std::vector<Point> Polygon::getPoints() const {
 std::vector<Segment> Polygon::getSegments() const {
     static std::vector<Segment> segments;
     if (segments.empty()) {
-        auto poly_points_iter = getPoints().begin();
-        Point lastPoint = *poly_points_iter++;
-        while (poly_points_iter != getPoints().end()) {
-            segments.push_back(Segment(lastPoint, *poly_points_iter));
-            lastPoint = *poly_points_iter++;
+        for (auto i = 1; i < getPoints().size(); ++i) {
+            segments.push_back(Segment(getPoints()[i - 1], getPoints()[i]));
         }
-        segments.push_back(Segment(lastPoint, *getPoints().begin()));
+        segments.push_back(Segment(getPoints().back(), getPoints().front()));
     }
     return segments;
 }

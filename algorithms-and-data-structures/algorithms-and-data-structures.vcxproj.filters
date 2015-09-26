@@ -30,5 +30,13 @@
     <ClInclude Include="quick-sort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="graphic-primitives.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="graphic-primitives.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
