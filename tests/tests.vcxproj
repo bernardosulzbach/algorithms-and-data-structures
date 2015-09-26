@@ -86,15 +86,16 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="binary-search-tree-test.cpp" />
-    <ClCompile Include="graphic-primitives-tests.cpp" />
+    <ClCompile Include="binary-search-tree.cpp" />
+    <ClCompile Include="graphic-primitives.cpp" />
     <ClCompile Include="josephus.cpp" />
-    <ClCompile Include="sorting-algorithms-tests.cpp" />
+    <ClCompile Include="sorting-algorithms.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="trie-test.cpp" />
+    <ClCompile Include="trailing-zeros-in-factorial.cpp" />
+    <ClCompile Include="trie.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\algorithms-and-data-structures\algorithms-and-data-structures.vcxproj">
