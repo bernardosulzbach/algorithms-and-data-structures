@@ -18,9 +18,13 @@ std::ostream& operator<<(std::ostream&, const Point&);
 
 class Segment {
 public:
-    Segment(const Point&, const Point&);
+    Segment(const Point& first, const Point& second):
+        a(first), b(second) {}
     Point getA() const;
     Point getB() const;
+private:
+    Point a;
+    Point b;
 };
 
 class Polygon {
@@ -35,8 +39,9 @@ public:
     Polygon(InputIterator begin, InputIterator end) {
         copy(begin, end, std::back_inserter(points));
     }
-    const std::vector<Point> getPoints() const;
-    const std::vector<Segment> getSegments() const;
+    Polygon(const Point& sw, const Point& ne);
+    std::vector<Point> getPoints() const;
+    std::vector<Segment> getSegments() const;
 private:
     std::vector<Point> points;
 };
@@ -46,6 +51,14 @@ private:
  * \param poly const Polygon&
  * \return double
  */
-double area(const Polygon& poly);
+double area(const Polygon&);
+
+double distance(const Point&, const Point&);
+double length(const Segment&);
+double perimeter(const Polygon&);
 
 bool inside_polygon(const Polygon& poly, const Point& point);
+
+/** \brief Generates the convex hull of the given Polygon using Andrew's Monotone Chain.
+ */
+Polygon convex_hull(const Polygon& poly);
