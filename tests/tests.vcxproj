@@ -101,9 +101,6 @@
     <ProjectReference Include="..\algorithms-and-data-structures\algorithms-and-data-structures.vcxproj">
       <Project>{02434ffb-ad84-4b6e-a733-69b14be91c78}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\trie\trie.vcxproj">
-      <Project>{99d0f5e4-8546-4788-8bf1-2d4cd2a6369f}</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

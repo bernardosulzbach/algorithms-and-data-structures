@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 
-#include "..\trie\trie.h"
+#include "..\algorithms-and-data-structures\trie.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 

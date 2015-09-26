@@ -39,12 +39,24 @@
     <ClInclude Include="trailing-zeros-in-factorial.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="graphic-primitives.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="trailing-zeros-in-factorial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="random.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trie.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
