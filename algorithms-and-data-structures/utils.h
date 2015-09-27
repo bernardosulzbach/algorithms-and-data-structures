@@ -19,4 +19,21 @@ namespace AADS {
     In middle(In begin, In end) {
         return std::next(begin, std::distance(begin, end) / 2);
     }
+    template <typename RandomAccessIterator>
+    /** Returns an iterator pointing to an element E such that E is bigger than or equal to its predecessor and its successor. */
+    RandomAccessIterator peak(RandomAccessIterator begin, RandomAccessIterator end) {
+        auto distance = std::distance(begin, end);
+        if (distance == 0 || distance == 1) return begin;
+        else {
+            if (begin[distance / 2] < begin[distance / 2 - 1]) {
+                return peak(begin, begin + distance / 2);
+            }
+            else if ((begin + distance / 2 + 1 != end) && begin[distance / 2] < begin[distance / 2 + 1]) {
+                return peak(begin + distance / 2 + 1, end);
+            }
+            else {
+                return begin + distance / 2;
+            }
+        }
+    }
 }

@@ -96,6 +96,7 @@
     </ClCompile>
     <ClCompile Include="trailing-zeros-in-factorial.cpp" />
     <ClCompile Include="trie.cpp" />
+    <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\algorithms-and-data-structures\algorithms-and-data-structures.vcxproj">
