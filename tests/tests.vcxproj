@@ -87,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="binary-search-tree.cpp" />
+    <ClCompile Include="graph.cpp" />
     <ClCompile Include="graphic-primitives.cpp" />
     <ClCompile Include="josephus.cpp" />
     <ClCompile Include="sorting-algorithms.cpp" />
