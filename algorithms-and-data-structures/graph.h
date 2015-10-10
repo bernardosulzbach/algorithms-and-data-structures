@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 
-// A simple graph implementation.
+// A simple graph implementation. Vertices are zero-indexed.
 class Graph {
 public:
     Graph() {}
@@ -27,6 +27,9 @@ public:
 
     // Erases a vertex.
     void erase_vertex(unsigned vertex);
+
+    // Checks if an edge exists.
+    bool has_edge(unsigned a, unsigned b);
 
     // Inserts an undirected edge connecting a and b.
     // Returns true if successful.

@@ -6,6 +6,7 @@
 #include <vector>
 
 #include "graph.h"
+#include "utils.h"
 
 typedef std::vector<unsigned>::const_iterator citer;
 
@@ -44,6 +45,10 @@ void Graph::erase_vertex(unsigned vertex) {
     // Subract a vertex from the counter.
     v_count--;
     adj_list.erase(adj_list.begin() + vertex);
+}
+
+bool Graph::has_edge(unsigned a, unsigned b) {
+    return AADS::in_vector(adj_list[a], b);
 }
 
 bool Graph::insert_edge(unsigned a, unsigned b) {
