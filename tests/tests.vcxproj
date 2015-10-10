@@ -87,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="binary-search-tree.cpp" />
+    <ClCompile Include="graph.cpp" />
     <ClCompile Include="graphic-primitives.cpp" />
     <ClCompile Include="josephus.cpp" />
     <ClCompile Include="sorting-algorithms.cpp" />
@@ -94,6 +95,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="string-interning.cpp" />
     <ClCompile Include="trailing-zeros-in-factorial.cpp" />
     <ClCompile Include="trie.cpp" />
     <ClCompile Include="utils.cpp" />

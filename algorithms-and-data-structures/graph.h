@@ -1,11 +1,15 @@
 #pragma once
 
 #include <algorithm>
+#include <iostream>
+#include <string>
 #include <vector>
 
-// A simple graph implementation.
+// A simple graph implementation. Vertices are zero-indexed.
 class Graph {
 public:
+    Graph() {}
+    Graph(const std::string& str);
 
     const bool directed = false;
     unsigned v_count = 0;
@@ -23,6 +27,9 @@ public:
 
     // Erases a vertex.
     void erase_vertex(unsigned vertex);
+
+    // Checks if an edge exists.
+    bool has_edge(unsigned a, unsigned b);
 
     // Inserts an undirected edge connecting a and b.
     // Returns true if successful.
@@ -51,3 +58,17 @@ public:
     // Verifies if the graph is bipartite,
     bool is_bipartite() const;
 };
+
+
+inline std::ostream& operator<<(std::ostream& ostr, const Graph& graph) {
+    typedef std::vector<std::vector<unsigned>>::size_type size_type;
+    size_type size = graph.adj_list.size();
+    for (size_type i = 0; i < size; ++i) {
+        ostr << i << ':';
+        for (unsigned adjacent : graph.adj_list[i]) {
+            ostr << adjacent << ' ';
+        }
+        ostr << '\n';
+    }
+    return ostr;
+}

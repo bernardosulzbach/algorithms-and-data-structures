@@ -1,13 +1,36 @@
 #include <algorithm>
 #include <queue>
 #include <stack>
+#include <sstream>
+#include <string>
 #include <vector>
 
 #include "graph.h"
+#include "utils.h"
 
 typedef std::vector<unsigned>::const_iterator citer;
 
 const std::pair<unsigned, unsigned> Graph::nedge = std::make_pair(Graph::nvertex, Graph::nvertex);
+
+Graph::Graph(const std::string &str) {
+    unsigned vertices = std::count(str.begin(), str.end(), '\n');
+    insert_vertices(vertices);
+    typedef std::string::size_type size_type;
+    size_type last_semicolon = 0;
+    unsigned cur_vertex = 0;
+    while ((last_semicolon = str.find(':', last_semicolon + 1)) != std::string::npos) {
+        size_type next_newline = str.find('\n', last_semicolon);
+        size_type diff = next_newline - last_semicolon;
+        if (diff > 1) {
+            std::stringstream ss(str.substr(last_semicolon + 1, diff - 1));
+            unsigned x;
+            while (ss >> x) {
+                insert_edge(cur_vertex, x);
+            }
+        }
+        cur_vertex += 1;
+    }
+}
 
 void Graph::insert_vertices(unsigned n) {
     v_count += n;
@@ -22,6 +45,10 @@ void Graph::erase_vertex(unsigned vertex) {
     // Subract a vertex from the counter.
     v_count--;
     adj_list.erase(adj_list.begin() + vertex);
+}
+
+bool Graph::has_edge(unsigned a, unsigned b) {
+    return AADS::in_vector(adj_list[a], b);
 }
 
 bool Graph::insert_edge(unsigned a, unsigned b) {

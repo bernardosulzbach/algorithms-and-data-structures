@@ -64,6 +64,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="graph.h" />
     <ClInclude Include="insertion-sort.h" />
     <ClInclude Include="binary_search_tree.h" />
     <ClInclude Include="josephus.h" />
@@ -71,13 +72,16 @@
     <ClInclude Include="graphic-primitives.h" />
     <ClInclude Include="quick-sort.h" />
     <ClInclude Include="random.h" />
+    <ClInclude Include="string-interning.h" />
     <ClInclude Include="trailing-zeros-in-factorial.h" />
     <ClInclude Include="trie.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="graph.cpp" />
     <ClCompile Include="graphic-primitives.cpp" />
     <ClCompile Include="random.cpp" />
+    <ClCompile Include="string-interning.cpp" />
     <ClCompile Include="trailing-zeros-in-factorial.cpp" />
     <ClCompile Include="trie.cpp" />
   </ItemGroup>

@@ -40,9 +40,6 @@ public:
                 else {
                     insert(trie, string);
                     inserted.push_back(string);
-                    
-                    std::cout << "Inserted " << string << ".\n";
-                    
                     ++counter;
                 }
             } while (got_larger_permutation);
