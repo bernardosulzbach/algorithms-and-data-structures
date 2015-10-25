@@ -46,7 +46,7 @@ std::vector<Point> Polygon::getPoints() const {
 std::vector<Segment> Polygon::getSegments() const {
     static std::vector<Segment> segments;
     if (segments.empty()) {
-        for (auto i = 1; i < getPoints().size(); ++i) {
+        for (auto i = 1U; i < getPoints().size(); ++i) {
             segments.push_back(Segment(getPoints()[i - 1], getPoints()[i]));
         }
         segments.push_back(Segment(getPoints().back(), getPoints().front()));

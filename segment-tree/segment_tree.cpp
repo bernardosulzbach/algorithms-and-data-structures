@@ -8,7 +8,7 @@
 unsigned size_of_segment_tree(unsigned source_size) {
     unsigned size = 1;
     while (size < source_size) size <<= 1;
-    return size << 1 - 1;
+    return (size << 1) - 1;
 }
 
 void construct_tree(int source[], int tree[], int low, int high, int pos) {
