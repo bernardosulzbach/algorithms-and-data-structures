@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2013 for Windows Desktop
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "string-interning", "string-interning\string-interning.vcxproj", "{FBA220F1-8968-4014-A8BD-C281BA242494}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "segment-tree", "segment-tree\segment-tree.vcxproj", "{5E857B1C-1998-4D4A-90FD-13A745F5783B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tests", "tests\tests.vcxproj", "{AC9E2F4C-A085-4B8D-A3FE-752947C1DC4E}"
@@ -21,16 +19,6 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FBA220F1-8968-4014-A8BD-C281BA242494}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{FBA220F1-8968-4014-A8BD-C281BA242494}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
-		{FBA220F1-8968-4014-A8BD-C281BA242494}.Debug|Mixed Platforms.Build.0 = Debug|Win32
-		{FBA220F1-8968-4014-A8BD-C281BA242494}.Debug|Win32.ActiveCfg = Debug|Win32
-		{FBA220F1-8968-4014-A8BD-C281BA242494}.Debug|Win32.Build.0 = Debug|Win32
-		{FBA220F1-8968-4014-A8BD-C281BA242494}.Release|Any CPU.ActiveCfg = Release|Win32
-		{FBA220F1-8968-4014-A8BD-C281BA242494}.Release|Mixed Platforms.ActiveCfg = Release|Win32
-		{FBA220F1-8968-4014-A8BD-C281BA242494}.Release|Mixed Platforms.Build.0 = Release|Win32
-		{FBA220F1-8968-4014-A8BD-C281BA242494}.Release|Win32.ActiveCfg = Release|Win32
-		{FBA220F1-8968-4014-A8BD-C281BA242494}.Release|Win32.Build.0 = Release|Win32
 		{5E857B1C-1998-4D4A-90FD-13A745F5783B}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{5E857B1C-1998-4D4A-90FD-13A745F5783B}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
 		{5E857B1C-1998-4D4A-90FD-13A745F5783B}.Debug|Mixed Platforms.Build.0 = Debug|Win32
