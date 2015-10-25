@@ -1,5 +1,7 @@
 # Algorithms and Data Structures
 
+[![AppVeyor](https://ci.appveyor.com/api/projects/status/j4aekbbh73whjrdl?svg=true)](https://ci.appveyor.com/project/mafagafogigante/algorithms-and-data-structures)
+
 ## Why this project?
 
 As I teach myself about algorithms and data structures I like to
