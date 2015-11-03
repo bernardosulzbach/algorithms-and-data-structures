@@ -214,5 +214,9 @@ ModelManifest.xml
 # Python
 __pycache__/
 
+# PyCharm
+**/.idea/workspace.xml
+**/.idea/tasks.xml
+
 # Code::Blocks
 *.layout
